@@ -28,16 +28,16 @@ import os
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['chinese_search','sphinx.ext.mathjax']
+extensions = ['chinese_search', 'sphinx.ext.mathjax']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
 # The suffix of source filenames.
 source_parsers = {
-   '.md': 'recommonmark.parser.CommonMarkParser',
+    '.md': 'recommonmark.parser.CommonMarkParser',
 }
-source_suffix = ['.rst','.md']
+source_suffix = ['.rst', '.md']
 
 # The encoding of source files.
 #source_encoding = 'utf-8-sig'
@@ -46,9 +46,9 @@ source_suffix = ['.rst','.md']
 master_doc = 'index'
 
 # General information about the project.
-project = u'Gitee-Read-the-Docs' 
-copyright = u'2019, zhyantao'
-author = u'Zhang'
+project = u'boris-spider'
+copyright = u'2020, boris'
+author = u'boris'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -89,8 +89,8 @@ htmlhelp_basename = 'Mannul Doc'
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'Gitee-Read-the-Docs.tex', 'Gitee-Read-the-Docs Documentation',
-     'Zhang', 'howto'),
+    (master_doc, 'boris-spider.tex', 'boris-spider Documentation',
+     'boris', 'howto'),
 ]
 
 # -- Options for manual page output ---------------------------------------
@@ -98,7 +98,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'Gitee-Read-the-Docs', 'Gitee-Read-the-Docs Documentation',
+    (master_doc, 'boris-spider', 'boris-spider Documentation',
      [author], 1)
 ]
 
@@ -112,8 +112,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'Gitee-Read-the-Docs', 'Gitee-Read-the-Docs Documentation',
-     author, 'Zhang', u'Zhang',
+    (master_doc, 'boris-spider', 'boris-spider Documentation',
+     author, 'boris', u'boris',
      'Miscellaneous'),
 ]
 
@@ -131,12 +131,12 @@ if not on_rtd:  # only import and set the theme if we're building docs locally
 # To generate Chinese PDF, you need to add the following code.
 if on_rtd:
     latex_elements = {
-    # The paper size ('letterpaper' or 'a4paper').
-    #'papersize': 'letterpaper',
-    # The font size ('10pt', '11pt' or '12pt').
-    #'pointsize': '10pt',
-    # Additional stuff for the LaTeX preamble.
-    'preamble': r'''
+        # The paper size ('letterpaper' or 'a4paper').
+        #'papersize': 'letterpaper',
+        # The font size ('10pt', '11pt' or '12pt').
+        #'pointsize': '10pt',
+        # Additional stuff for the LaTeX preamble.
+        'preamble': r'''
     \hypersetup{unicode=true}
     \usepackage{CJKutf8}
     \DeclareUnicodeCharacter{00A0}{\nobreakspace}
@@ -155,9 +155,9 @@ if on_rtd:
     }
 else:
     latex_elements = {
-        'papersize' : 'a4paper',
-        'utf8extra' : '',
-        'inputenc'  : '',
+        'papersize': 'a4paper',
+        'utf8extra': '',
+        'inputenc': '',
         'babel'     : r'''\usepackage[english]{babel}''',
         'preamble' : r'''
         \usepackage{ctex}

@@ -9,4 +9,3 @@
     SingleSpider
     Spider
     BatchSpider
-    cmdline2

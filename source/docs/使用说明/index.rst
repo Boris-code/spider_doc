@@ -9,3 +9,4 @@
     SingleSpider
     Spider
     BatchSpider
+    setting

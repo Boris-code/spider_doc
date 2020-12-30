@@ -55,7 +55,7 @@ author = u'boris'
 # built documents.
 #
 # The short X.Y version.
-version = 'v 1.0.0'
+version = '爬虫框架'
 # The full version, including alpha/beta/rc tags.
 release = '1.1.0'
 

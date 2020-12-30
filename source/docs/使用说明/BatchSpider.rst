@@ -203,7 +203,7 @@ state字段为整形，值有4种（-1 抓取失败，0等待抓取，1抓取成
 ::
 
     def parser(self, request, response):
-        self.update_task_batch(request.task_id, 1) # 更新任务状态为1
+        yield self.update_task_batch(request.task_id, 1) # 更新任务状态为1
 
 
 4. 示例代码：
